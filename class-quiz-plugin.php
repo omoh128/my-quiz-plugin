@@ -70,3 +70,4 @@ class PerQuestionTimerQuiz
     
 }
 }
+$quiz= new PerQuestionTimerQuiz;
