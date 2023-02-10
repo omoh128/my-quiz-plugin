@@ -8,17 +8,11 @@ class PerQuestionTimerQuiz
     public function __construct()
     {
         add_shortcode('pqt_quiz', array($this, 'pqt_quiz_shortcode'));
-        add_action('wp_enqueue_scripts', array($this, 'enqueue_scripts'));
+        
     }
 
-    /**
-     * Enqueue the plugin's scripts and styles
-     */
-    public function enqueue_scripts()
-    {
-        wp_enqueue_style('pqt-quiz-style', plugin_dir_url(__FILE__) . 'css/pqt-quiz-style.css');
-        wp_enqueue_script('pqt-quiz-script', plugin_dir_url(__FILE__) . 'js/pqt-quiz-script.js', array('jquery'), false, true);
-    }
+   
+   
 
     /**
      * Output the quiz HTML
