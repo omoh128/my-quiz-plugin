@@ -16,7 +16,7 @@
 
 require_once plugin_dir_path( __FILE__ ) . '/class-quiz-plugin.php';
 function pqtq_load_stylesheet() {
-    wp_enqueue_style( 'pqtq-style', plugins_url( '/css/style.css', __FILE__ ) );
+    wp_enqueue_style( 'pqtq-style', plugins_url( '/css/timer.css', __FILE__ ) );
 }
 add_action( 'wp_enqueue_scripts', 'pqtq_load_stylesheet' );
 

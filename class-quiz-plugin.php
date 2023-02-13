@@ -21,50 +21,30 @@ class PerQuestionTimerQuiz
     {
         ob_start();
         ?>
-        <div class="pqt-quiz-container">
-            <h1 class="pqt-quiz-title">Quiz Title</h1>
-            <form action="" method="post">
-                <div class="pqt-question-container">
-                    <p class="pqt-question">Question 1</p>
-                    <div class="pqt-answer-options">
-                        <label for="pqt-answer1">
-                            <input type="radio" id="pqt-answer1" name="pqt-question1" value="option1">
-                            Option 1
-                        </label>
-                        <label for="pqt-answer2">
-                            <input type="radio" id="pqt-answer2" name="pqt-question1" value="option2">
-                            Option 2
-                        </label>
-                        <label for="pqt-answer3">
-                            <input type="radio" id="pqt-answer3" name="pqt-question1" value="option3">
-                            Option 3
-                        </label>
-                    </div>
-                    <div class="pqt-question-timer"></div>
-                </div>
-                <div class="pqt-question-container">
-                    <p class="pqt-question">Question 2</p>
-                    <div class="pqt-answer-options">
-                        <label for="pqt-answer4">
-                            <input type="radio" id="pqt-answer4" name="pqt-question2" value="option1">
-                            Option 1
-                        </label>
-                        <label for="pqt-answer5">
-                            <input type="radio" id="pqt-answer5" name="pqt-question2" value="option2">
-                            Option 2
-                        </label>
-                        <label for="pqt-answer6">
-
-
-<input type="radio" id="pqt-answer6" name="pqt-question2" value="option3">
-                        Option 3
-                    </label>
-                </div>
-                <div class="pqt-question-timer"></div>
-            </div>
-            <input type="submit" value="Submit">
-        </form>
+    <div class="quiz-container" id="quiz">
+    <div class="quiz-header">
+      <h2 id="question">Question Text</h2>
+      <ul>
+        <li>
+          <input type="radio" name="answer" id="a" class="answer">
+          <label for="a" id="a_text">Answer</label>
+        </li>
+        <li>
+          <input type="radio" name="answer" id="b" class="answer">
+          <label for="b" id="b_text">Answer</label>
+        </li>
+        <li>
+          <input type="radio" name="answer" id="c" class="answer">
+          <label for="c" id="c_text">Answer</label>
+        </li>
+        <li>
+          <input type="radio" name="answer" id="d" class="answer">
+          <label for="d" id="d_text">Answer</label>
+        </li>
+      </ul>
     </div>
+    <button id="submit">Submit</button>
+  </div>
     <?php
    return ob_get_clean();
     
